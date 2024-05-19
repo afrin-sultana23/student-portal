@@ -1,13 +1,12 @@
 import React from 'react';
 import Calendar from "@/components/calendar";
 import {FaArrowRight, FaClock} from "react-icons/fa";
-import {FaPlus} from "react-icons/fa6";
 import Stats from "@/components/Stats";
 import Reminders from "@/components/Reminders";
 
 const Dashboard = () => {
     return (
-        <div className="flex m-6">
+        <div className="flex m-6 max-w-[120rem] mx-auto">
             <div className=" w-4/5">
                 <div className="bg-[#F6E4E8] flex rounded-2xl mx-8 col-span-3 h-[18rem]">
                     <h1 className="text-3xl font-bold text-white p-12">Overview</h1>

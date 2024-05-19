@@ -65,6 +65,8 @@ const Page = () => {
                         </div>
                         <Link className="w-full h-10 bg-violet-200 hover:bg-opacity-35   shadow rounded flex justify-center items-center"
                               href="/home/">Routine</Link>
+                        <Link className="w-full h-10 bg-violet-200 hover:bg-opacity-35   shadow rounded flex justify-center items-center"
+                              href="/courses/">Courses</Link>
                         <Link className="w-full h-10  bg-gray-200 shadow rounded flex justify-center items-center"
                               href="/home/">Enrollment</Link>
                         <Link className="w-full h-10 bg-gray-200 shadow rounded flex justify-center items-center"

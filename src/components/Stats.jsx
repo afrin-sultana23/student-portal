@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
+import {PieChart, Pie, Cell, ResponsiveContainer, Tooltip} from 'recharts';
 
 const chartData = [
     { name: 'Group A', value: 400 },
@@ -35,7 +35,7 @@ const Stats = () => {
                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                         ))}
                     </Pie>
-
+                    <Tooltip />
                 </PieChart>
             </ResponsiveContainer>
         </div>
