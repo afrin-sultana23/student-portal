@@ -3,16 +3,16 @@ import React from 'react';
 import {PieChart, Pie, Cell, ResponsiveContainer, Tooltip} from 'recharts';
 
 const chartData = [
-    { name: 'Group A', value: 400 },
-    { name: 'Group B', value: 300 },
-    { name: 'Group C', value: 300 },
-    { name: 'Group D', value: 200 },
+    { name: 'Programming', value: 500 },
+    { name: 'Speaking English', value: 300 },
+    { name: 'Leadership', value: 300 },
+    { name: 'Campaign', value: 200 },
 ];
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
 const handlePieEnter = (data, index) => {
-    console.log(`Sector ${data.name} (${data.value}) was entered!`);
+    console.log(`Sector ${data.name} (${data.value}%) was entered!`);
 };
 
 const Stats = () => {

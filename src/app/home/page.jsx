@@ -2,6 +2,7 @@ import React from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import Dashboard from "@/components/Dashboard";
+import {FaCalendarAlt, FaDailymotion} from "react-icons/fa";
 
 const Page = () => {
     return (
@@ -30,9 +31,10 @@ const Page = () => {
                         <div className="flex-none">
                             <div className="pr-3">
                                 <ul className="menu menu-horizontal px-1 space-x-3 text-lg">
-                                    <li className="">Courses</li>
-                                    <li className="">Routines</li>
-                                    <li className="">Enrollment</li>
+                                    <Link href="/courses/" className="link link-hover">Courses</Link>
+                                    <Link href="/payments/" className="link link-hover">Payments</Link>
+                                    <Link href="/result/" className="link link-hover">Enrollment</Link>
+
                                 </ul>
                             </div>
                             <div className="dropdown dropdown-end">
@@ -56,29 +58,21 @@ const Page = () => {
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-                    <ul className="menu p-4 w-80 min-h-full bg-base-200 space-y-4 text-base-content text-lg ">
+                    <ul className="menu py-7  w-80 min-h-full bg-base-200 space-y-4 text-base-content text-lg ">
                         {/* Sidebar content here */}
                         <div className="w-full flex justify-center mb-6">
                             <Image src="/puc_logo.webp"
                                  height={200} width={200} className="w-[3rem]" alt="logo"/>
                             <h1 className="text-2xl ml-2">Premier University</h1>
                         </div>
-                        <Link className="w-full h-10 bg-violet-200 hover:bg-opacity-35   shadow rounded flex justify-center items-center"
-                              href="/home/">Routine</Link>
-                        <Link className="w-full h-10 bg-violet-200 hover:bg-opacity-35   shadow rounded flex justify-center items-center"
-                              href="/courses/">Courses</Link>
-                        <Link className="w-full h-10  bg-gray-200 shadow rounded flex justify-center items-center"
-                              href="/home/">Enrollment</Link>
-                        <Link className="w-full h-10 bg-gray-200 shadow rounded flex justify-center items-center"
-                              href="/result/">Result</Link>
-                        <Link className="w-full h-10 bg-gray-200 shadow rounded flex justify-center items-center"
-                              href="/home/">Notices</Link>
-                        <Link className="w-full h-10 bg-gray-200 shadow rounded flex justify-center items-center"
-                              href="/home/">Transcript</Link>
-                        <Link className="w-full h-10 bg-gray-200 shadow rounded flex justify-center items-center"
-                              href="/home/">Payment Form</Link>
-                        <Link className="w-full h-10 bg-gray-200 shadow rounded flex justify-center items-center"
-                              href="/home/">Section Office</Link>
+                        <Link className="text-lg w-full h-8 text-center hover:bg-gray-200" href="/home/"> Routine</Link>
+                        <Link className="text-lg w-full h-10 text-center hover:bg-gray-200" href="/courses/">Courses</Link>
+                        <Link className="text-lg w-full h-10 text-center hover:bg-gray-200" href="/enroll/">Enrollment</Link>
+                        <Link className="text-lg w-full h-10 text-center hover:bg-gray-200" href="/result/">Result</Link>
+                        <Link className="text-lg w-full h-10 text-center hover:bg-gray-200" href="/payments/">Payments</Link>
+                        <Link className="text-lg w-full h-10 text-center hover:bg-gray-200" href="/home/">Notices</Link>
+                        <Link className="text-lg w-full h-10 text-center hover:bg-gray-200" href="/home/">Transcript</Link>
+                        <Link className="text-lg w-full h-10 text-center hover:bg-gray-200" href="/home/">Section Office</Link>
                     </ul>
                 </div>
             </div>

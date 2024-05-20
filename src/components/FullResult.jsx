@@ -12,8 +12,8 @@ const FullResult = () => {
     };
 
     return (
-        <div className="p-6 bg-white shadow-lg mx-auto rounded-lg">
-            <h2 className="text-2xl text-center font-bold mb-4">Student Overview</h2>
+        <div className="py-6 px-[43rem] bg-white shadow-lg mx-auto rounded-lg">
+
             <div className="mb-4 mx-auto">
                 <input
                     type="text"

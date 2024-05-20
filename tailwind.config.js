@@ -4,6 +4,17 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+
+  ],
+  safelist: [
+    {
+      pattern: /bg-(.*?)-(.*?)/,
+      variants: ["group-hover"],
+    },
+    {
+      pattern: /text-(.*?)-(.*?)/,
+      // variants: ["group-hover"],
+    }
   ],
   theme: {
     extend: {

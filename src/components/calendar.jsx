@@ -83,7 +83,7 @@ const Calendar = () => {
     };
 
     return (
-        <div className="bg-white rounded-lg shadow-xl max-w-[22rem] px-8 py-6">
+        <div className="bg-white rounded-lg shadow-xl max-w-[23rem] px-8 py-6">
             <div className="flex items-center justify-between mb-4">
                 <button
                     className="font-extrabold text-xl"

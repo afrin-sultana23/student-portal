@@ -3,30 +3,64 @@ import Calendar from "@/components/calendar";
 import {FaArrowRight, FaClock} from "react-icons/fa";
 import Stats from "@/components/Stats";
 import Reminders from "@/components/Reminders";
+import CreditHour from "@/components/CreditHour";
+import Notices from "@/components/Notices";
+import ClassTimes from "@/components/ClassTimes";
 
 const Dashboard = () => {
+
+
     return (
-        <div className="flex m-6 max-w-[120rem] mx-auto">
+        <div className="flex p-8 max-w-[120rem] mx-auto">
             <div className=" w-4/5">
                 <div className="bg-[#F6E4E8] flex rounded-2xl mx-8 col-span-3 h-[18rem]">
-                    <h1 className="text-3xl font-bold text-white p-12">Overview</h1>
+                    <h1 className="text-3xl font-bold text-black p-12">Overview</h1>
+                    <div className="card w-full  p-8 m-5 bg-base-100">
+                        <div className="text-left   space-y-3">
+                            <h1 className="text-2xl font-semibold">Afrin Sultana Habiba</h1>
+                            <h1 >0222310005101047</h1>
+                            <h1 className="text-lg"><span>Advisor: </span> Jannat Tohfa Chowdhury</h1>
+                            <h1 className="text-sm"><span>Phone: </span> 018765432</h1>
+                        </div>
+                    </div>
                     <div className="card w-full  p-4 m-5 bg-base-100">
+                        <div className="text-left   space-y-3">
+                            <div className="flex py-1 justify-between">
+                                <h1 className="text-2xl font-semibold">Class Times:</h1>
+                                <h1 className="badge badge-accent">Updated</h1>
+                            </div>
+                            <ul className="list-disc list-inside">
+
+                                <li className="text-lg text-gray-600">
+                                       SAT : 8.30am - 5.30pm
+                                    </li><li  className="text-lg text-gray-600">
+                                       SUN : 8.30am - 5.30pm
+                                    </li><li  className="text-lg text-gray-600">
+                                       MON : 8.30am - 5.30pm
+                                    </li><li  className="text-lg text-gray-600">
+                                       TUE : 8.30am - 5.30pm
+                                    </li><li  className="text-lg text-gray-600">
+                                       WED : 8.30am - 5.30pm
+                                    </li>
+
+                            </ul>
+                        </div>
 
                     </div>
                     <div className="card w-full  p-4 m-5 bg-base-100">
-
-                    </div>
-                    <div className="card w-full  p-4 m-5 bg-base-100">
-                        <h1 className="card-title pl-5">Stats</h1>
+                        <h1 className="card-title pl-5">Achieved skill</h1>
                         <Stats></Stats>
                     </div>
                 </div>
 
                 {/*  notices */}
-                <h1 className="text-4xl font-bold text-gray-900 py-5 pl-4">Notices</h1>
-                <div className="flex justify-evenly space-x-8 h-[22rem] m-5">
-                    <div className="w-full  rounded-2xl shadow-xl bg-base-100"></div>
-                    <div className="w-full rounded-2xl shadow-xl bg-base-100"></div>
+                <div className="flex justify-evenly space-x-8 h-[24rem] m-5">
+                    <div className="w-full  rounded-2xl shadow-xl bg-base-100">
+                        <Notices></Notices>
+                    </div>
+                    <div className="w-full h-full ">
+                        <CreditHour></CreditHour>
+                    </div>
                 </div>
 
                 {/* courses   */}
@@ -42,7 +76,7 @@ const Dashboard = () => {
                             <p className="text-lg text-gray-200 pb-2">1.75 credit hour complete</p>
                             <h1 className="text-2xl font-bold">Numerical method</h1>
                         </div>
-                        More<FaArrowRight className="h-6 w-6 ml-2"/>
+                        <span className="font-medium  ">more<FaArrowRight className="h-6 w-6"/></span>
                     </div>
                     <div className="bg-[#9698D6] text-white flex items-center  mx-3 rounded-2xl p-6">
                         <div
@@ -62,7 +96,7 @@ const Dashboard = () => {
                         </div>
                         <div className="pl-4">
                             <p className="text-lg text-gray-200 pb-2">3.00 credit hour complete</p>
-                            <h1 className="text-2xl font-bold">Object oriented programming</h1>
+                            <h1 className="text-2xl font-bold">Communicating English</h1>
                         </div>
                         <span className="font-medium  ">more<FaArrowRight className="h-6 w-6"/></span>
                     </div>
